@@ -10,7 +10,7 @@ end
 
 def get_user_input
   user_input = gets.chomp;
-  criteria = (1..6).to_a;
+  criteria = (1..6).to_a.to_s;
   puts criteria;
   criteria << 'exit';
   puts criteria; 
