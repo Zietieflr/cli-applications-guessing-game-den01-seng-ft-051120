@@ -10,8 +10,8 @@ end
 
 def get_user_input
   user_input = gets.chomp;
-  criteria = (1..6).to_a.to_s;
-  puts criteria;
+  criteria = (1..6).to_a;
+  criteria.map(& .to_s);
   criteria << ['exit'];
   puts criteria; 
   until criteria.include? (user_input) do 
