@@ -13,10 +13,9 @@ end
 def get_user_input
   user_input = gets.chomp;
   criteria = (1..6).to_a;
-  criteria = criteria.map(&:to_s) #{ |n| n.to_s };
+  criteria = criteria.map(&:to_s);
   criteria << 'exit';
   criteria;
-  binding.pry;
   until criteria.include?(user_input) do 
     puts "Sorry, #{user_input} is not valid input."
     promt_user_input;
