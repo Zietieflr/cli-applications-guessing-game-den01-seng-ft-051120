@@ -12,7 +12,7 @@ def get_user_input
   user_input = gets.chomp;
   criteria = (1..6).to_a.to_s;
   puts criteria;
-  criteria << 'exit';
+  criteria << ['exit'];
   puts criteria; 
   until criteria.include? (user_input) do 
     puts "Sorry, #{user_input} is not valid input."
