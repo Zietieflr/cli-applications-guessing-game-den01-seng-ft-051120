@@ -18,7 +18,7 @@ def get_user_input
   criteria;
   until criteria.include?(user_input) do 
     puts "Sorry, #{user_input} is not valid input."
-    promt_user_input;
+#    promt_user_input;
     user_input = get_user_input; 
   end
   user_input; 
