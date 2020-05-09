@@ -14,7 +14,7 @@ def get_user_input
   criteria.map(&:to_s);
   criteria << ['exit'];
   puts criteria; 
-  until criteria.fetch(user_input, nil) != nil do 
+  until criteria.include?(user_input) do 
     puts "Sorry, #{user_input} is not valid input."
     promt_user_input;
     user_input = get_user_input; 
