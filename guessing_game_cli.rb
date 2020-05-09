@@ -13,7 +13,8 @@ def get_user_input
   criteria = (1..6).to_a;
   criteria.map(&:to_s);
   criteria << ['exit'];
-  puts criteria; 
+  criteria;
+  binding.pry;
   until criteria.include?(user_input) do 
     puts "Sorry, #{user_input} is not valid input."
     promt_user_input;
