@@ -40,7 +40,7 @@ def using_input (user_input, comp_num)
 end
 
 def run_guessing_game 
-  welcome; 
+#  welcome; 
   user_input = '';
   comp_num = generate_number;
   promt_user_input;
