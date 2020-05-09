@@ -43,7 +43,7 @@ def run_guessing_game
 #  welcome; 
   user_input = '';
   comp_num = generate_number;
-  promt_user_input;
+#  promt_user_input;
   user_input = get_user_input;
   using_input(user_input, comp_num);
 =begin 
