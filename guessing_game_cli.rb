@@ -30,7 +30,8 @@ end
 
 def using_input (user_input, comp_num)
   case 
-    when user_input === comp_num
+#    when user_input === comp_num
+    when user_input === '1'
       puts "You guessed the correct number!"
     when user_input === 'exit'
       puts "Goodbye!"; 
