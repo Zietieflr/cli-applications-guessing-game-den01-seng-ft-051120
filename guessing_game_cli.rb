@@ -1,5 +1,7 @@
 # Code your solution here!
 
+require 'pry';
+
 def welcome 
   puts "Hello, thanks for coming. Now let's play!"
 end 
