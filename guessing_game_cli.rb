@@ -35,7 +35,7 @@ def using_input (user_input, comp_num)
     when user_input === 'exit'
       puts "Goodbye!"; 
     else 
-      puts "Sorry the computer guessed #{comp_num}."
+      puts "Sorry! The computer guessed #{comp_num}."
   end
 end
 
