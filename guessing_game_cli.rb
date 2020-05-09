@@ -13,8 +13,8 @@ end
 def get_user_input
   user_input = gets.chomp;
   criteria = (1..6).to_a;
-  criteria.map { |n| n.to_s };
-  criteria << ['exit'];
+  criteria = criteria.map { |n| n.to_s };
+  criteria << 'exit';
   criteria;
   binding.pry;
   until criteria.include?(user_input) do 
